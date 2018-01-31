@@ -37,14 +37,15 @@ section#billboard h1 {
 
 #boxes .box1 img,
 #boxes .box2 img {
-	height: 80%;
+	height: 100px;
 	padding: 20px;
 }
 
 #boxes .box1 h3,
 #boxes .box2 h3 {
-	color: white;
-	font-size: 18px;
+	font-family: chalkduster;
+	color: #BF8D00;
+	font-size: 12px;
 }
 
 #boxes .box1,
@@ -53,19 +54,20 @@ section#billboard h1 {
 	padding: 0;
 	display: inline;
 	float: left;
-	height: 200px;
-	width: 25%;
+	height: 150px;
+	width: 12.5%;
 	background-color: #565756;
-	border: #BF8D00 solid 2px;
 }
 
 /*.box1 {
-	background-color: #565756;
+	border-right: white solid 1px;
 }
 
 .box2 {
-	background-color: darkgray;
-}*/
+	border-left: white solid 1px;
+}
+
+*/
 /**** FOOTER ***********************/
 
 
@@ -73,11 +75,12 @@ footer {
 	color: white;
 	font-size: 12px;
 	width: 100%;
-	position: absolute;
+	position: bottom;
 	/*bottom: 0;*/
 	padding-top: 10px;
 	height: 40px;
 	text-align: center;
+	clear: both;
 }
 
 
@@ -115,7 +118,7 @@ footer {
 	#boxes .box2 img {
 	margin: 0;
 	padding: 5px;
-	height: 80%;
+	height: 50px;
 	}
 
 	#boxes .box1 h3,
@@ -126,13 +129,12 @@ footer {
 	#boxes .box1,
 	#boxes .box2 {
 	margin: 0;
-	padding: 0;
+	padding-top: 10px;
 	display: inline;
 	float: left;
 	height: 100px;
 	width: 25%;
 	background-color: #565756;
-	border: #BF8D00 solid 2px;
 	}
 
 }
