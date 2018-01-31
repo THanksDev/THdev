@@ -151,6 +151,51 @@ section#billboard h1 {
 }
 
 
+/**** PROJECTS ***********************/
+
+
+#contact {
+	height: 300px;
+	/*text-align: center;*/
+}
+
+#contact form {
+	margin-top: 15px;
+	float: left;
+	width: 45%;
+	text-align: center;
+}
+
+label {
+	padding: 5px 0 0 5px;
+	text-align: left;
+	font-family: chalkduster;
+	font-weight: bold;
+}
+
+input,
+textarea {
+	padding: 0;
+	margin: 0;
+}
+
+label,
+input,
+textarea {
+	width: 100%;
+}
+
+#contact h1 {
+	float: right;
+	width: 45%;
+	margin-top: 70px;
+	font-size: 68px;
+	font-family: chalkduster;
+	font-weight: bold;
+	text-align: center;
+}
+
+
 /**** FOOTER ***********************/
 
 
@@ -168,7 +213,7 @@ footer {
 }
 
 
-@media(max-width: 1040px) {
+@media(max-width: 1200px) {
 
 	section#billboard {
 		height: 400px;
@@ -180,6 +225,11 @@ footer {
 
 	#projects h1 {
 		width: 30%;
+		font-size: 52px;
+	}
+
+	#contact h1 {
+		width: 40%;
 		font-size: 52px;
 	}
 
@@ -241,14 +291,16 @@ footer {
 		font-size: 16px;
 	}
 
-	#projects {
-		height: 400px;
+	#projects,
+	#contact {
+		height: 450px;
 		float: none;
 		clear: both;
-		text-align: center;
+		/*text-align: center;*/
 	}
 
-	#projects h1 {
+	#projects h1,
+	#contact h1 {
 		text-align: center;
 		font-size: 38px;
 	}
@@ -258,7 +310,9 @@ footer {
 	}
 
 	#projects h1,
-	#projects span {
+	#projects span,
+	#contact h1,
+	#contact form {
 		margin: 10px 0 0 0;
 		padding: 0;
 		float: none;
