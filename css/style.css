@@ -1,5 +1,19 @@
+/**** UNIVERSAL ***********************/
+
+
+body {
+	background-color: #E7E8E7;
+}
+
 
 /**** NAVBAR ***********************/
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 10000;
+	transition: all .3s ease-in-out;
+}
 
 span.logo {
 	font-family: chalkduster;
@@ -31,18 +45,20 @@ section#billboard h1 {
 /**** INDEX MAIN ***********************/
 
 #boxes {
-	height: 200px;
+	height: 140px;
 	text-align: center;
 }
 
 #boxes .box1 img,
 #boxes .box2 img {
 	height: 100px;
-	padding: 20px;
+	padding: 25px;
 }
 
 #boxes .box1 h3,
 #boxes .box2 h3 {
+	margin: 0;
+	padding: 0;
 	font-family: chalkduster;
 	color: #BF8D00;
 	font-size: 12px;
@@ -54,24 +70,92 @@ section#billboard h1 {
 	padding: 0;
 	display: inline;
 	float: left;
-	height: 150px;
+	height: 140px;
 	width: 12.5%;
 	background-color: #565756;
 }
 
-/*.box1 {
-	border-right: white solid 1px;
+
+/**** ABOUT ***********************/
+
+#about {
+	overflow: hidden;
+	clear: both;
+	text-align: center;
 }
 
-.box2 {
-	border-left: white solid 1px;
+#about h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 62px;
+	font-family: chalkduster;
+	font-weight: bold;
 }
 
-*/
+#about p {
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+
+/**** PROJECTS ***********************/
+
+
+#projects {
+	overflow: hidden;
+	background-color: #565756;
+	height: 340px;
+	text-align: center;
+}
+
+#projects h1 {
+	float: left;
+	width: 45%;
+	margin-top: 70px;
+	font-size: 68px;
+	color: #BF8D00;
+	font-family: chalkduster;
+	font-weight: bold;
+}
+
+#projects span,
+#projects a {
+	float: left;
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size: 26px;
+}
+
+#carouselExampleControls {
+	padding: 25px;
+	overflow: hidden;
+}
+
+.slide {
+	float: right;
+	max-height: 400px;
+	max-width: 550px;
+	width: 100%;
+	margin: auto;
+}
+
+.item img {
+	height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+}
+
+
 /**** FOOTER ***********************/
 
 
 footer {
+	margin: 0;
 	color: white;
 	font-size: 12px;
 	width: 100%;
@@ -94,6 +178,21 @@ footer {
 		font-size: 50px;
 	}
 
+	#projects h1 {
+		width: 30%;
+		font-size: 52px;
+	}
+
+	#projects span {
+		font-size: 14px;
+	}
+
+	.slide {
+		max-height: 300px;
+		max-width: 450px;
+	}
+
+
 }
 
 @media(max-width: 768px) {
@@ -102,7 +201,8 @@ footer {
 		height: 350px;
 	}
 
-	section#billboard h1 {
+	section#billboard h1,
+	#about h1 {
 		font-size: 36px;
 	}
 
@@ -135,6 +235,35 @@ footer {
 	height: 100px;
 	width: 25%;
 	background-color: #565756;
+	}
+
+	#about p {
+		font-size: 16px;
+	}
+
+	#projects {
+		height: 400px;
+		float: none;
+		clear: both;
+		text-align: center;
+	}
+
+	#projects h1 {
+		text-align: center;
+		font-size: 38px;
+	}
+
+	#projects span {
+		font-size: 12px;
+	}
+
+	#projects h1,
+	#projects span {
+		margin: 10px 0 0 0;
+		padding: 0;
+		float: none;
+		width: 100%;
+		text-align: center;
 	}
 
 }
