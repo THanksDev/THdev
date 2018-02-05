@@ -101,7 +101,8 @@ section#billboard h1 {
 /**** PROJECTS ***********************/
 
 
-#projects {
+#projects,
+#web {
 	overflow: hidden;
 	background-color: #565756;
 	height: 340px;
@@ -118,7 +119,18 @@ section#billboard h1 {
 	width: 45%;
 }
 
-.recentProjects h1 {
+#web .webProjects {
+	float: right;
+	width: 45%;
+}
+
+#web .slideShow_2 {
+	float: left;
+	width: 45%;
+}
+
+.recentProjects h1,
+.webProjects h1 {
 	width: 100%;
 	margin-top: 60px;
 	color: #BF8D00;
@@ -127,7 +139,8 @@ section#billboard h1 {
 	font-weight: bold;
 }
 
-.recentProjects a {
+.recentProjects a,
+.webProjects a {
 	text-decoration: none;
 	color: white;
 }
@@ -136,7 +149,8 @@ a:hover {
 	color: gray;
 }
 
-.recentProjects h2 {
+.recentProjects h2,
+.webProjects h2 {
 	width: 100%;
 	padding: 10px;
 	font-family: chalkduster;
@@ -152,8 +166,23 @@ a:hover {
 }
 
 
+/**** MOTTO ***********************/
 
-/**** PROJECTS ***********************/
+#motto {
+	height: 220px;
+	overflow: hidden;
+}
+
+#motto .picWall {
+	float: left;
+	width: 33.33%;
+}
+
+.picWall img {
+	width: 100%;
+}
+
+/**** CONTACT ***********************/
 
 
 #contact {
@@ -163,6 +192,7 @@ a:hover {
 
 #contact .form {
 	margin-top: 15px;
+	padding: 10px;
 	float: left;
 	width: 45%;
 	text-align: center;
@@ -185,6 +215,17 @@ label,
 input,
 textarea {
 	width: 100%;
+}
+
+.submit,
+.reset {
+	color: white;
+	background-color: #565756; 
+}
+
+.submit:hover,
+.reset:hover {
+	opacity: .8;
 }
 
 #contact .contact_me {
@@ -233,16 +274,20 @@ footer {
 		font-size: 52px;
 	}
 
-	#projects {
+	#projects,
+	#web {
 		height: 250px;
 	}
 
 	#projects .recentProjects,
-	#projects .slideShow_1 {
+	#projects .slideShow_1,
+	#web .webProjects,
+	#web .slideShow_2 {
 		width: 40%;
 	}
 
-	.recentProjects h1 {
+	.recentProjects h1,
+	.webProjects h1 {
 		font-size: 40px;
 		margin-top: 10px;
 		padding: 0;
@@ -297,23 +342,28 @@ footer {
 		font-size: 16px;
 	}
 
-	#projects {
+	#projects,
+	#web {
 		height: 500px;
 	}
 
 	#projects .recentProjects,
-	#projects .slideShow_1 {
+	#projects .slideShow_1,
+	#web .webProjects,
+	#web .slideShow_2 {
 		float: none;
 		width: 100%;
 	}
 
-	.recentProjects h1 {
+	.recentProjects h1,
+	.webProjects h1 {
 		font-size: 46px;
 		margin-top: 10px;
 		padding: 0;
 	}
 
-	.recentProjects h2 {
+	.recentProjects h2,
+	.webProjects h2 {
 		font-size: 16px;
 	}
 
@@ -347,6 +397,15 @@ footer {
 		float: none;
 		width: 100%;
 		text-align: center;
+	}
+
+	#motto {
+		height: 100px;
+	}
+
+	#motto h1 {
+		padding: 30px;
+		font-size: 24px;
 	}
 
 }
@@ -397,23 +456,28 @@ footer {
 		font-size: 16px;
 	}
 
-	#projects {
+	#projects,
+	#web {
 		height: 400px;
 	}
 
 	#projects .recentProjects,
-	#projects .slideShow_1 {
+	#projects .slideShow_1,
+	#web .webProjects,
+	#web .slideShow_2 {
 		float: none;
 		width: 100%;
 	}
 
-	.recentProjects h1 {
+	.recentProjects h1,
+	.webProjects h1 {
 		font-size: 40px;
 		margin-top: 10px;
 		padding: 0;
 	}
 
-	.recentProjects h2 {
+	.recentProjects h2,
+	.webProjects h2 {
 		font-size: 16px;
 	}
 
@@ -447,6 +511,15 @@ footer {
 		padding: 0;
 		float: none;
 		text-align: center;
+	}
+
+	#motto {
+		height: 80px;
+	}
+
+	#motto h1 {
+		padding: 30px;
+		font-size: 16px;
 	}
 
 }
