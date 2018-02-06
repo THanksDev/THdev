@@ -492,6 +492,12 @@ footer {
 		font-size: 24px;
 	}
 
+	.img,
+	.desc {
+		float: none;
+		width: 100%;
+	}
+
 }
 
 @media(max-width: 450px) {
@@ -606,28 +612,31 @@ footer {
 		font-size: 16px;
 	}
 
-	#graphics article img,
-	#graphics article p {
+	#graphics {
+		text-align: center;
+		margin: auto;
+	}
+
+	.img,
+	.desc {
 		float: none;
 		width: 100%;
-		text-align: center;
-		text-indent: 0px;
-	}
-
-	#graphics article {
-		margin-top: 20px;
-		padding-top: 20px;
-	}
-
-	#graphics article p {
-		margin: 20px 0;
-		padding: 0 15px;
 		
 	}
 
-	#graphics article h4 {
-		font-size: 12px;
-		padding: 10px;
+	.desc {
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+
+	.desc h4 {
+		margin-right: 50px;
+	}
+
+	.desc p {
+	margin-top: 20px;
+	text-indent: 0px;
 	}
 
 }
