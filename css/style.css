@@ -13,12 +13,17 @@ header {
 	width: 100%;
 	z-index: 10000;
 	transition: all .3s ease-in-out;
+	overflow: hidden;
 }
 
 span.logo {
 	font-family: chalkduster;
 	font-weight: bold;
 	color: #BF8D00;
+}
+
+.navbar-nav a:hover {
+	opacity: .8;
 }
 
 /**** BILLBOARD ***********************/
@@ -182,6 +187,40 @@ a:hover {
 	width: 100%;
 }
 
+
+/**** GRAPHIC PAGE ***********************/
+
+#filler {
+	height: 55px;
+	background-color: pink;
+}
+
+#graphics {
+	overflow: hidden;
+}
+
+#graphics article {
+	margin-top: 20px 0;
+	display: inline-block;
+	border-bottom: white solid 3px;
+}
+
+#graphics article img {
+	float: left;
+	width: 40%;
+	padding: 20px 0;
+}
+
+#graphics article p {
+	float: right;
+	width: 60%;
+	margin-top: 60px;
+	padding: 0 35px 0 35px;
+	text-indent: 50px;
+	font-size: 22px;
+}
+
+
 /**** CONTACT ***********************/
 
 
@@ -257,6 +296,9 @@ footer {
 	text-align: center;
 	clear: both;
 }
+
+
+/**** MEDIA QUERIES ***********************/
 
 
 @media(max-width: 1200px) {
@@ -520,6 +562,25 @@ footer {
 	#motto h1 {
 		padding: 30px;
 		font-size: 16px;
+	}
+
+	#graphics article img,
+	#graphics article p {
+		float: none;
+		width: 100%;
+		text-align: center;
+		text-indent: 0px;
+	}
+
+	#graphics article {
+		margin-top: 20px;
+		padding-top: 20px;
+	}
+
+	#graphics article p {
+		margin: 20px 0;
+		padding: 0 15px;
+		
 	}
 
 }
