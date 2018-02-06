@@ -87,6 +87,7 @@ section#billboard h1 {
 	overflow: hidden;
 	clear: both;
 	text-align: center;
+	padding: 50px 0;
 }
 
 #about h1 {
@@ -99,7 +100,7 @@ section#billboard h1 {
 
 #about p {
 	margin-bottom: 30px;
-	font-size: 18px;
+	font-size: 22px;
 }
 
 
@@ -110,7 +111,7 @@ section#billboard h1 {
 #web {
 	overflow: hidden;
 	background-color: #565756;
-	height: 340px;
+	height: 500px;
 	text-align: center;
 }
 
@@ -137,7 +138,7 @@ section#billboard h1 {
 .recentProjects h1,
 .webProjects h1 {
 	width: 100%;
-	margin-top: 60px;
+	margin-top: 140px;
 	color: #BF8D00;
 	font-family: chalkduster;
 	font-size: 68px;
@@ -162,8 +163,7 @@ a:hover {
 }
 
 .carousel {
-	margin-top: 15px;
-	padding: 20px;
+	margin-top: 120px;
 }
 
 .carousel-inner {
@@ -174,7 +174,7 @@ a:hover {
 /**** MOTTO ***********************/
 
 #motto {
-	height: 220px;
+	height: 200px;
 	overflow: hidden;
 }
 
@@ -191,33 +191,71 @@ a:hover {
 /**** GRAPHIC PAGE ***********************/
 
 #filler {
-	height: 55px;
-	background-color: pink;
+	height: 50px;
 }
 
 #graphics {
 	overflow: hidden;
+	margin-bottom: 50px;
 }
 
-#graphics article {
-	margin-top: 20px 0;
+#graphics .container {
+	border-bottom: #565756 solid 3px;
+}
+
+.img,
+.desc {
+	overflow: hidden;
 	display: inline-block;
-	border-bottom: white solid 3px;
 }
 
-#graphics article img {
+.img {
 	float: left;
 	width: 40%;
 	padding: 20px 0;
 }
 
-#graphics article p {
+.img img {
+	margin-top: 50px;
+	width: 100%;
+	transition-duration: 2s;
+}
+
+.img img:hover {
+	transform: rotateY(180deg);
+
+}
+
+.desc {
 	float: right;
 	width: 60%;
-	margin-top: 60px;
-	padding: 0 35px 0 35px;
+	padding: 0 35px 15px 35px;
 	text-indent: 50px;
 	font-size: 22px;
+}
+
+.desc p {
+	margin-top: 100px;
+}
+
+.desc h4 {
+	margin-top: 10px;
+}
+
+.desc h4 a {
+	margin: 5px;
+	padding: 8px;
+	font-size: 14px;
+	text-decoration: none;
+	background-color: #565756;
+	color: #fff;
+	transition-property: border-radius;
+	transition-duration: .5s;
+}
+
+.desc h4 a:hover {
+	opacity: .8;
+	border-radius: 10px;
 }
 
 
@@ -331,9 +369,13 @@ footer {
 	.recentProjects h1,
 	.webProjects h1 {
 		font-size: 40px;
-		margin-top: 10px;
+		margin-top: 40px;
 		padding: 0;
 	}
+
+	.carousel {
+	margin-top: 25px;
+}
 
 
 }
@@ -581,6 +623,11 @@ footer {
 		margin: 20px 0;
 		padding: 0 15px;
 		
+	}
+
+	#graphics article h4 {
+		font-size: 12px;
+		padding: 10px;
 	}
 
 }
